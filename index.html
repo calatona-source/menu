@@ -1,284 +1,337 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selección de Menú</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    https://cdn.tailwindcss.comscript>
+<title>19 de setembre!!!</title>
 
-    <style>
-        body {
-            background-color: #efe9dd;
-        }
+https://cdn.tailwindcss.comscript>
 
-        .notebook {
-            background: repeating-linear-gradient(
-                to bottom,
-                #fffef9,
-                #fffef9 34px,
-                #d8e4f3 35px
-            );
-        }
+<style>
+body{
+    background:#ede6d6;
+}
 
-        .paper {
-            box-shadow: 0 10px 35px rgba(0,0,0,.12);
-        }
+.libreta{
+    background:#fffdf8;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
 
-        .option-card input {
-            display: none;
-        }
+.plat input{
+    display:none;
+}
 
-        .option-card input:checked + div {
-            background: #dbeafe;
-            border-color: #2563eb;
-            transform: scale(1.01);
-        }
+.plat input:checked + div{
+    background:#dbeafe;
+    border-color:#2563eb;
+    transform:scale(1.02);
+}
 
-        .option-card div {
-            transition: 0.2s;
-        }
-    </style>
+.plat div{
+    transition:all .2s;
+}
+
+.fons-menu{
+    background:
+    linear-gradient(
+        rgba(255,255,255,.94),
+        rgba(255,255,255,.94)
+    );
+}
+</style>
+
 </head>
 
 <body class="p-4 md:p-8">
 
-    <div class="max-w-5xl mx-auto notebook paper rounded-xl p-6 md:p-10">
-
-        <h1 class="text-4xl font-bold text-gray-800 mb-2">
-            Selección de Menú
-        </h1>
-
-        <p class="text-gray-600 mb-8">
-            Rellena el formulario para indicar tus preferencias.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-
-            <div>
-                <img
-                    src="menu_38.jpg"
-                    alt="Menú"
-                    class="rounded-lg shadow-lg w-full">
-     "Alérgenos"
-                    class="rounded-lg shadow-lg w-full">
-            </div>
-
-     bold mb-2">
-                    Nombre y apellidos
-                </label>
+<div class="max-w-5xl mx-auto">
+
+<div class="libreta rounded-3xl overflow-hidden">
+
+<div class="bg-stone-800 text-white text-center py-8">
+
+<h1 class="text-4xl md:text-5xl font-bold">
+19 de setembre !!!
+</h1>
+
+<div class="bg-amber-50 border-2 border-amber-200 rounded-xl p-5 mb-8">
+
+    <label for="nombre" class="block text-xl font-bold text-stone-800 mb-2">
+        👤 Nom i cognoms
+    </label>
+
+    <input
+        id="nombre"
+        name="nombre"
+        type="text"
+        required
+        class="w-full p-4 text-lg border-2 border-amber-300 rounded-xl focus:outline-none focus:border-stone-600"
+        placeholder="Escriu el teu nom i cognoms">
+
+</div>
+<p class="mt-2 text-stone-200">
+Selecció de menú
+</p>
+
+</div>
+
+<div class="p-6 md:p-10 fons-menu">
+
+<div class="grid lg:grid-cols-2 gap-6 mb-10">
+
+<img
+src="menu_38.jpg"
+alt="Menú"
+class="w-full rounded-2xl shadow-lg border bg-white">
+
+<img
+src="al.lergens.
+</div>
+
+<form id="formulario" class="space-y-10"
+<input
+id="nombre"
+required
+type="text"
+class="w-full p-4 rounded-xl border"
+placeholder="Escriu el teu nom">
+
+</div>
+
+<div>
+
+<h2 class="text-3xl font-bold text-stone-800 mb-5">
+Entrant
+</h2>
+
+<div class="grid gap-3">
+
+<label class="plat">
+<input type="radio" name="entrante" value="Amanida amb fruits secs i formatge de cabra" required>
+<div class="bg-white border-2 rounded-xl p-4">
+🥗 Amanida amb fruits secs i formatge de cabra
+</div>
+</label>
+
+<label class="plat">
+<input type="radio" name="entrante" value="Amanida estil xató amb el nostre romesco">
+<div class="bg-white border-2 rounded-xl p-4">
+🥗 Amanida estil xató amb el nostre romesco
+</div>
+</label>
+
+<label class="plat">
+<input type="radio" name="entrante" value="Fideuà">
+<div class="bg-white border-2 rounded-xl p-4">
+🍝 Fideuà
+</div>
+</label>
+
+<label class="plat">
+<input type="radio" name="entrante" value="Assortit d'embotits artesans de la nostra botiga">
+<div class="bg-white border-2 rounded-xl p-4">
+🥓 Assortit d'embotits artesans
+</div>
+</label>
+
+<label class="plat">
+<input type="radio" name="entrante" value="Sopa o crema de temporada">
+<div class="bg-white border-2 rounded-xl p-4">
+🍲 Sopa o crema de temporada
+</div>
+</label>
 
-                <input
-                    id="nombre"
-                    required
-                    type="text"
-                    class="w-full border rounded-lg p-3 bg-white"
-                    placeholder="Escribe tu nombre">
-            </div>
-
-            <div>
-
-                <h2 class="text-2xl font-bold mb-4">
-                    Entrantes
-                </h2>
-
-                <div class="grid gap-3">
+<label class="plat">
+<input type="radio" name="entrante" value="Canelons casolans">
+<div class="bg-white border-2 rounded-xl p-4">
+🧀 Canelons casolans
+</div>
+</label>
 
-                    <label class="option-card">
-                        <input type="radio" name="entrante" value="Amanida amb fruits secs i formatge de cabra" required>
-                        <div class="border bg-white p-3 rounded-lg">Amanida amb fruits secs i formatge de cabra</div>
-                    </label>
-
-                    <label class="option-card">
-                        <input type="radio" name="entrante" value="Amanida estil xató amb el nostre romesco">
-                        <div class="border bg-white p-3 rounded-lg">Amanida estil xató amb el nostre romesco</div>
-                    </label>
-
-                    <label class="option-card">
-                        <input type="radio" name="entrante" value="Fideuà">
-                        <div class="border bg-white p-3 rounded-lg">Fideuà</div>
-                    </label>
-
-                    <label class="option-card">
-                        <input type="radio" name="entrante" value="Assortit d'embotits artesans de la nostra botiga">
-                        <div class="border bg-white p-3 rounded-lg">Assortit d'embotits artesans de la nostra botiga</div>
-                    </label>
+</div>
 
-                    <label class="option-card">
-                        <input type="radio" name="entrante" value="Sopa o crema de temporada">
-                        <div class="border bg-white p-3 rounded-lg">Sopa o crema de temporada</div>
-                    </label>
+</div>
 
-                    <label class="option-card">
-                        <input type="radio" name="entrante" value="Canelons casolans">
-                        <div class="border bg-white p-3 rounded-lg">Canelons casolans</div>
-                    </label>
+<div>
 
-                </div>
+<h2 class="text-3xl font-bold text-stone-800 mb-5">
+Principal
+</h2>
 
-            </div>
+<div class="grid gap-3">
 
-            <div>
+<label class="plat">
+<input type="radio" name="principal" value="Gambes a la planxa" required>
+<div class="bg-white border-2 rounded-xl p-4">
+🦐 Gambes a la planxa
+</div>
+</label>
 
-                <h2 class="text-2xl font-bold mb-4">
-                    Principal
-                </h2>
+<label class="plat">
+<input type="radio" name="principal" value="Conill a la brasa">
+<div class="bg-white border-2 rounded-xl p-4">
+🔥 Conill a la brasa
+</div>
+</label>
 
-                <div class="grid gap-3">
+<label class="plat">
+<input type="radio" name="principal" value="Botifarra de pagès de Sant Quirze a la brasa">
+<div class="bg-white border-2 rounded-xl p-4">
+🌭 Botifarra de pagès a la brasa
+</div>
+</label>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="Gambes a la planxa" required>
-                        <div class="border bg-white p-3 rounded-lg">Gambes a la planxa</div>
-                    </label>
+<label class="plat">
+<input type="radio" name="principal" value="Filet de porc a la brasa">
+<div class="bg-white border-2 rounded-xl p-4">
+🥩 Filet de porc a la brasa
+</div>
+</label>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="Conill a la brasa">
-                        <div class="border bg-white p-3 rounded-lg">Conill a la brasa</div>
-                    </label>
+<label class="plat">
+<input type="radio" name="principal" value="Filet de porc al Rocafort">
+<div class="bg-white border-2 rounded-xl p-4">
+🧀 Filet de porc al Rocafort
+</div>
+</label>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="Botifarra de pagès de Sant Quirze a la brasa">
-                        <div class="border bg-white p-3 rounded-lg">Botifarra de pagès de Sant Quirze a la brasa</div>
-                    </label>
+<label class="plat">
+<input type="radio" name="principal" value="1/2 Pollastre a la brasa">
+<div class="bg-white border-2 rounded-xl p-4">
+🍗 1/2 Pollastre a la brasa
+</div>
+</label>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="Filet de porc a la brasa">
-                        <div class="border bg-white p-3 rounded-lg">Filet de porc a la brasa</div>
-                    </label>
+<label class="plat">
+<input type="radio" name="principal" value="Peus de porc a la brasa">
+<div class="bg-white border-2 rounded-xl p-4">
+🥘 Peus de porc a la brasa
+</div>
+</label>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="Filet de porc al Rocafort">
-                        <div class="border bg-white p-3 rounded-lg">Filet de porc al Rocafort</div>
-                    </label>
+</div>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="1/2 Pollastre a la brasa">
-                        <div class="border bg-white p-3 rounded-lg">1/2 Pollastre a la brasa</div>
-                    </label>
+</div>
 
-                    <label class="option-card">
-                        <input type="radio" name="principal" value="Peus de porc a la brasa">
-                        <div class="border bg-white p-3 rounded-lg">Peus de porc a la brasa</div>
-                    </label>
+<div>
 
-                </div>
+<h2 class="text-3xl font-bold text-stone-800 mb-4">
+Menú infantil
+</h2>
 
-            </div>
+<label class="flex gap-3 items-start bg-amber-50 border rounded-xl p-4">
 
-            <div>
+<input id="infantil" type="checkbox" class="mt-1">
 
-                <h2 class="text-2xl font-bold mb-4">
-                    Menú infantil
-                </h2>
+<span>
+🍝 Macarrons a la bolonyesa, pollastre arrebossat,
+patates fregides i postre.
+</span>
 
-                <label class="flex gap-3 items-center bg-white border p-4 rounded-lg">
-                    <input id="infantil" type="checkbox">
-                    <span>
-                        Macarrons a la bolonyesa, pollastre arrebossat,
-                        patates fregides i postre.
-                    </span>
-                </label>
+</label>
 
-            </div>
+</div>
 
-            <div>
+<div>
 
-                <label class="flex items-center gap-3 font-semibold">
-                    <input id="alergenos" type="checkbox">
-                    Tengo alergias o intolerancias
-                </label>
+<label class="flex gap-3 items-center font-semibold text-lg">
 
-                <textarea
-                    id="detalleAlergenos"
-                    rows="4"
-                    class="w-full mt-3 border rounded-lg p-3"
-                    placeholder="Indica aquí tus alergias o necesidades alimentarias"></textarea>
+<input id="alergenos" type="checkbox">
 
-            </div>
+⚠️ Tinc al·lèrgies o intoleràncies
 
-            <button
-                type="submit"
-                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg">
+</label>
 
-                Enviar selección
+<textarea
+id="detalle"
+rows="4"
+class="w-full mt-4 border rounded-xl p-4"
+placeholder="Indica aquí els al·lèrgens o observacions"></textarea>
 
-            </button>
+</div>
 
-        </form>
+<div class="text-center">
 
-        <div
-            id="mensaje"
-            class="hidden mt-6 bg-green-100 border border-green-300 p-4 rounded-lg">
-        </div>
+<button
+type="submit"
+class="bg-stone-800 hover:bg-black text-white px-10 py-4 rounded-xl text-lg">
 
-    </div>
+Enviar selecció
 
-    <script>
+</button>
 
-        const form = document.getElementById('formulario');
+</div>
 
-        form.addEventListener('submit', async (e) => {
+</form>
 
-            e.preventDefault();
+<div
+id="resultado"
+class="hidden mt-8 p-6 rounded-xl bg-green-50 border border-green-300">
+</div>
 
-            const datos = {
+</div>
 
-                fecha: new Date().toISOString(),
+</div>
 
-                nombre: document.getElementById('nombre').value,
+</div>
 
-                entrante:
-                    document.querySelector('input[name="entrante"]:checked')?.value,
+<script>
 
-                principal:
-                    document.querySelector('input[name="principal"]:checked')?.value,
+document.getElementById("formulario")
+.addEventListener("submit",function(e){
 
-                infantil:
-                    document.getElementById('infantil').checked,
+e.preventDefault();
 
-                alergias:
-                    document.getElementById('alergenos').checked,
+const dades = {
 
-                observaciones:
-                    document.getElementById('detalleAlergenos').value
-            };
+nom: document.getElementById("nombre").value,
 
-            localStorage.setItem(
-                "ultimaSeleccionMenu",
-                JSON.stringify(datos)
-            );
+entrant:
+document.querySelector('input[name="entrante"]:checked')?.value,
 
-            /*
-            AQUÍ PEGARÁS MÁS ADELANTE
-            LA URL DEL FLUJO DE POWER AUTOMATE
+principal:
+document.querySelector('input[name="principal"]:checked')?.value,
 
-            await fetch("URL_DEL_FLOW", {
-                method: "POST",
-                headers: {
-                    "Content-Type":"application/json"
-                },
-                body: JSON.stringify(datos)
-            });
-            */
+infantil:
+document.getElementById("infantil").checked
+? "Sí"
+: "No",
 
-            const mensaje = document.getElementById('mensaje');
+alergenos:
+document.getElementById("detalle").value
 
-            mensaje.classList.remove('hidden');
+};
 
-            mensaje.innerHTML = `
-                ✅ Selección enviada correctamente.<br><br>
-                Nombre: <strong>${datos.nombre}</strong><br>
-                Entrante: <strong>${datos.entrante}</strong><br>
-                Principal: <strong>${datos.principal}</strong>
-            `;
+localStorage.setItem(
+"menuCalAtona",
+JSON.stringify(dades)
+);
 
-            form.reset();
+const resultat =
+document.getElementById("resultado");
 
-        });
+resultat.classList.remove("hidden");
 
-    </script>
+resultat.innerHTML = `
+<h3 class="font-bold text-xl mb-3">
+✅ Selecció enregistrada
+</h3>
+
+<p><strong>Nom:</strong> ${dades.nom}</p>
+<p><strong>Entrant:</strong> ${dades.entrant}</p>
+<p><strong>Principal:</strong> ${dades.principal}</p>
+<p><strong>Menú infantil:</strong> ${dades.infantil}</p>
+`;
+
+window.scrollTo(
+0,
+document.body.scrollHeight
+);
+
+});
+
+</script>
 
 </body>
-
 </html>
