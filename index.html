@@ -1,60 +1,316 @@
-
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú Personalitzat</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserva Menú Cal Atona</title>
+
+<script src.tailwindcss.comscript>
+
+<style>
+body{
+    background:#f2efe7;
+}
+
+.notebook{
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        #faf8f2,
+        #faf8f2 34px,
+        #d9e3f0 35px
+    );
+}
+
+.paper-shadow{
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.10),
+    inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+.radio-card input{
+    display:none;
+}
+
+.radio-card input:checked + div{
+    background:#dbeafe;
+    border-color:#2563eb;
+}
+
+label{
+    cursor:pointer;
+}
+</style>
+
 </head>
-<body class="bg-gradient-to-br from-yellow-100 to-orange-200 min-h-screen p-4">
-  <div class="max-w-2xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
-    
-    <!-- Imatge a la part superior -->
-    <div>
-      <img src="iamge.jpg" alt="Imatge del menú" class="w-full h-auto object-cover">
+<body class="min-h-screen p-5">
+
+<div class="max-w-4xl mx-auto">
+
+    <div class="notebook paper-shadow rounded-xl p-6 md:p-10">
+
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">
+            Menú Restaurante
+        </h1>
+
+        <p class="text-gray-600 mb-8">
+            Selecciona tus platos y envía la reserva.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+
+            <img
+                src="menu_38.jpg"
+                alt="Menú"
+                class="lérgenos"
+                class="rounded            <label class="font-semibold block mb-2">
+                    Nombre
+                </label>
+
+                <input
+                    id="nombre"
+                    type="text"
+                    required
+                    class="w-full border rounded-lg p-3"
+                    placeholder="Escribe tu nombre"
+                >
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-4">
+                    Entrante
+                </h2>
+
+                <div class="grid gap-3">
+
+                    <label class="radio-card">
+                        <input type="radio" name="entrante" value="Amanida amb fruits secs i formatge de cabra">
+                        <div class="border p-3 rounded-lg bg-white">Amanida amb fruits secs i formatge de cabra</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="entrante" value="Amanida estil xató amb el nostre romesco">
+                        <div class="border p-3 rounded-lg bg-white">Amanida estil xató amb el nostre romesco</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="entrante" value="Fideuà">
+                        <div class="border p-3 rounded-lg bg-white">Fideuà</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="entrante" value="Assortit d'embotits artesans de la nostra botiga">
+                        <div class="border p-3 rounded-lg bg-white">Assortit d'embotits artesans de la nostra botiga</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="entrante" value="Sopa o crema de temporada">
+                        <div class="border p-3 rounded-lg bg-white">Sopa o crema de temporada</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="entrante" value="Canelons casolans">
+                        <div class="border p-3 rounded-lg bg-white">Canelons casolans</div>
+                    </label>
+
+                </div>
+            </div>
+
+            <div>
+
+                <h2 class="text-xl font-bold mb-4">
+                    Principal
+                </h2>
+
+                <div class="grid gap-3">
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="Gambes a la planxa">
+                        <div class="border p-3 rounded-lg bg-white">Gambes a la planxa</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="Conill a la brasa">
+                        <div class="border p-3 rounded-lg bg-white">Conill a la brasa</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="Botifarra de pagès de Sant Quirze a la brasa">
+                        <div class="border p-3 rounded-lg bg-white">Botifarra de pagès de Sant Quirze a la brasa</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="Filet de porc a la brasa">
+                        <div class="border p-3 rounded-lg bg-white">Filet de porc a la brasa</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="Filet de porc al Rocafort">
+                        <div class="border p-3 rounded-lg bg-white">Filet de porc al Rocafort</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="1/2 Pollastre a la brasa">
+                        <div class="border p-3 rounded-lg bg-white">1/2 Pollastre a la brasa</div>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="principal" value="Peus de porc a la brasa">
+                        <div class="border p-3 rounded-lg bg-white">Peus de porc a la brasa</div>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h2 class="text-xl font-bold mb-4">
+                    Menú infantil
+                </h2>
+
+                <label class="flex items-center gap-3 bg-white border rounded-lg p-4">
+                    <input id="infantil" type="checkbox">
+                    <span>
+                        Macarrons a la bolonyesa, pollastre arrebossat, patates fregides i postre.
+                    </span>
+                </label>
+
+            </div>
+
+            <div>
+
+                <label class="flex items-center gap-3">
+                    <input id="alergenos" type="checkbox">
+                    <span>Tengo alergias o intolerancias</span>
+                </label>
+
+                <textarea
+                    id="detalleAlergenos"
+                    class="w-full mt-3 border rounded-lg p-3"
+                    rows="4"
+                    placeholder="Indica aquí tus alergias..."
+                ></textarea>
+
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+
+                <button
+                    type="submit"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-lg"
+                >
+                    Guardar y enviar
+                </button>
+
+                <button
+                    type="button"
+                    id="verDatos"
+                    class="bg-gray-700 text-white px-6 py-3 rounded-lg"
+                >
+                    Ver último pedido guardado
+                </button>
+
+            </div>
+
+            <div
+                id="resultado"
+                class="hidden bg-green-50 border border-green-200 rounded-lg p-4"
+            ></div>
+
+        </form>
     </div>
+</div>
 
-    <!-- Formulari a sota -->
-    <div class="p-6">
-      <h1 class="text-3xl font-bold text-center text-orange-700 mb-4">Escull el teu menú</h1>
-      <form action="mailto:calatona@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
-        <div>
-          <label for="nom" class="block text-lg font-medium text-gray-700">Nom:</label>
-          <input type="text" id="nom" name="Nom" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500">
-        </div>
+<script>
 
-        <div>
-          <label class="block text-lg font-medium text-gray-700">Primer plat:</label>
-          <select name="Primer plat" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500">
-            <option>Amanida amb fruits secs i formatge de cabra</option>
-            <option>Amanida estil xató amb el nostre romesco</option>
-            <option>Fideuà</option>
-            <option>Assortit d’embotits artesans de la nostra botiga</option>
-            <option>Sopa o crema de temporada</option>
-            <option>Canelons</option>
-          </select>
-        </div>
+const form=document.getElementById('pedidoForm');
 
-        <div>
-          <label class="block text-lg font-medium text-gray-700">Plat principal:</label>
-          <select name="Plat principal" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500">
-            <option>Gamba llagostinera a la planxa</option>
-            <option>Conill a la brasa</option>
-            <option>Botifarra de pagès de Sant Quirze</option>
-            <option>Secret de porc a la brasa</option>
-            <option>Secret de porc al Rocafort</option>
-            <option>½ pollastre</option>
-            <option>Entrecot de vaca a la brasa (350 g)</option>
-            <option>Peus de porc a la brasa</option>
-          </select>
-        </div>
+form.addEventListener('submit',function(e){
 
-        <div class="text-center">
-          <button type="submit" class="bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition">Enviar</button>
-        </div>
-      </form>
-    </div>
-  </div>
+    e.preventDefault();
+
+    const nombre=document.getElementById('nombre').value;
+
+    const entrante=document.querySelector('input[name="entrante"]:checked')?.value || "No indicado";
+
+    const principal=document.querySelector('input[name="principal"]:checked')?.value || "No indicado";
+
+    const infantil=document.getElementById('infantil').checked ? "Sí" : "No";
+
+    const alergias=document.getElementById('alergenos').checked ? "Sí" : "No";
+
+    const detalle=document.getElementById('detalleAlergenos').value;
+
+    const pedido={
+        nombre,
+        entrante,
+        principal,
+        infantil,
+        alergias,
+        detalle,
+        fecha:new Date().toLocaleString()
+    };
+
+    localStorage.setItem(
+        "ultimoPedidoCalAtona",
+        JSON.stringify(pedido)
+    );
+
+    const cuerpo=
+`Nombre: ${nombre}
+
+Entrante: ${entrante}
+
+Principal: ${principal}
+
+Menú infantil: ${infantil}
+
+¿Tiene alergias?: ${alergias}
+
+Detalle:
+${detalle}`;
+
+    window.location.href=
+    `mailto:calatona@gmail.com?subject=${encodeURIComponent("Reserva menú")}&body=${encodeURIComponent(cuerpo)}`;
+
+    document.getElementById('resultado').classList.remove('hidden');
+    document.getElementById('resultado').innerHTML=
+    "La información se ha guardado en este dispositivo y se abrirá tu programa de correo para enviar la reserva.";
+
+});
+
+document.getElementById('verDatos')
+.addEventListener('click',()=>{
+
+    const datos=
+    JSON.parse(
+        localStorage.getItem("ultimoPedidoCalAtona")
+    );
+
+    const resultado=
+    document.getElementById('resultado');
+
+    if(!datos){
+        resultado.classList.remove('hidden');
+        resultado.innerHTML="No existe ningún pedido guardado.";
+        return;
+    }
+
+    resultado.classList.remove('hidden');
+
+    resultado.innerHTML=`
+        <b>Último pedido guardado</b><br><br>
+        Nombre: ${datos.nombre}<br>
+        Entrante: ${datos.entrante}<br>
+        Principal: ${datos.principal}<br>
+        Menú infantil: ${datos.infantil}<br>
+        Alérgenos: ${datos.alergias}<br>
+        Detalle: ${datos.detalle}<br>
+        Fecha: ${datos.fecha}
+    `;
+});
+</script>
+
 </body>
 </html>
